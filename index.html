@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>ATAOL - Portfolio</title>
+		<meta content="portfolyo" name="keywords" />
+		<meta content="portfolyo" name="description" />
+
+		<!-- fav icons -->
+		<link
+			rel="shortcut icon"
+			href="/image/mushroom.png"
+			type="image/x-icon"
+		/>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+			crossorigin="anonymous"
+		/>
+		<!-- our project just needs Font Awesome Solid + Brands -->
+		<link
+			href="/your-path-to-fontawesome/css/fontawesome.css"
+			rel="stylesheet"
+		/>
+		<link
+			href="/your-path-to-fontawesome/css/brands.css"
+			rel="stylesheet"
+		/>
+		<link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet" />
+		<!-- cloudfare library -->
+
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js
+		https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"
+		/>
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"
+		/>
+
+		<!-- Google Web Fonts -->
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- Font Awesome -->
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+			rel="stylesheet"
+		/>
+
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+			integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+			crossorigin="anonymous"
+		/>
+
+		<!-- Libraries Stylesheet -->
+		<link
+			href="lib/owlcarousel/assets/owl.carousel.min.css"
+			rel="stylesheet"
+		/>
+		<link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+
+		<!-- normal style sheet -->
+		<link rel="stylesheet" href="css/style.css" />
+		<style>
+			.footerlab {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-direction: column;
+				text-align: center;
+			}
+			.container-social {
+				font-size: 30px;
+				justify-content: space-between;
+				display: block;
+				margin: 10px;
+				text-align: justify;
+				border-bottom: 1px solid #000;
+			}
+			.social {
+				align-items: center;
+				margin: 50px;
+				justify-content: space-between;
+				display: block;
+				text-align: justify;
+			}
+			.link {
+				margin: 20px;
+			}
+			.link:hover {
+				color: blue;
+			}
+
+			.list-inline-item {
+				font-size: 20px;
+				margin: 20px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!-- Navigation -->
+		<section id="navigation">
+			<div class="nav-icon">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke="currentColor"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						stroke-width="1"
+						d="M4 6h16M4 12h16M4 18h16"
+					/>
+				</svg>
+			</div>
+		</section>
+		<div id="nav-content">
+			<div class="close-btn">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke="currentColor"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						stroke-width="2"
+						d="M6 18L18 6M6 6l12 12"
+					/>
+				</svg>
+			</div>
+			<div class="wrapper">
+				<h2 class="section-heading">Menu</h2>
+				<nav>
+					<ul>
+						<li>
+							<a data-text="Our Hero" href="./index.html#hero"
+								>Our Hero</a
+							>
+						</li>
+						<li>
+							<a data-text="About" href="./index.html#about"
+								>About</a
+							>
+						</li>
+						<li>
+							<a
+								data-text="Testimonial"
+								href="./index.html#testimonial"
+								>Testimonial</a
+							>
+						</li>
+						<li>
+							<a data-text="Projects" href="./index.html#projects"
+								>Projects</a
+							>
+						</li>
+						<li>
+							<a data-text="Contact" href="pages/contact.html"
+								>Contact</a
+							>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+		<!-- Hero section -->
+		<section id="hero">
+			<div class="container">
+				<div class="left">
+					<p class="subheading">I'm Ataol Baran Oray</p>
+					<h2 class="heading">
+						<div class="wrapper"><span>Living</span></div>
+						<div class="wrapper"><span>with</span></div>
+						<div class="wrapper"><span>purpose :)</span></div>
+					</h2>
+					<p class="desc">
+						I've always been interested in technology and found it
+						as a tool to overcome challenges along the way,
+						<b style="color: #5924ed">and this is my story.</b>
+					</p>
+					<div class="buttons">
+						<a href="#projects" class="animated-word"
+							>See My Works</a
+						>
+						<button class="glow-on-hover" type="button">
+							<a
+								href="pages/memories.html"
+								style="color: cornsilk"
+							>
+								Let's dive to my Memories!
+							</a>
+						</button>
+					</div>
+				</div>
+				<div class="right">
+					<img src="./image/profile.jpg" alt="profile" />
+				</div>
+			</div>
+		</section>
+
+		<!-- About -->
+		<section id="about">
+			<div class="container">
+				<h2 class="section-heading" data-outline="about">About</h2>
+				<div class="wrapper">
+					<div class="left">
+						<div class="card">
+							<div class="img">
+								<img src="./image/profile.jpg" alt="profile" />
+							</div>
+							<p class="card-desc">
+								I am in my 4 th year as an International Student
+								in University of Toronto studying Computer and
+								Political Science. I have experience working as
+								an intern and working in start - up’s. I have
+								been freelancing and teaching since the
+								beginning of the pandemic and continued working
+								on my projects.
+							</p>
+							<h3 class="card-name">Ataol Baran Oray</h3>
+							<p class="card-sub-title">Entrepreneur/Student</p>
+						</div>
+					</div>
+					<div class="right">
+						<p class="subheading">Hi! This is <span>ATAOL</span></p>
+						<h1
+							class="typed-text-output d-inline font-weight-lighter text-white"
+						></h1>
+						<div class="typed-text d-none">
+							Web Designer, Web Developer, Front End Developer,
+							Apps Designer, Apps Developer
+						</div>
+						<br />
+						<br />
+
+						<p class="right-text">
+							I work with companies and agencies around the world,
+							building Web sites and application UIs with strong
+							focus on responsive design, accessibility,
+							performance, and the latest in the area of front-end
+							(Javascript, react, gatsby, node, Python, djengo) I
+							also speak and run workshops across the globe, also
+							focusing on CSS, SVG, Responsive Design and
+							accessibility, covering practical tips on how to
+							build full stack using modern tools and techniques
+							that scale and are future-proof.
+						</p>
+
+						<!-- <div class="buttons">
+							<a
+								href="./resume.txt"
+								class="primary-btn"
+								download="./resume.txt"
+								>Download Resume</a
+							>
+							<a href="./contact.html" class="primary-btn outline"
+								>Hire Me</a
+							>
+						</div> -->
+						<div class="buttons">
+							<!-- <a href="./resume.txt" class="animated-word"
+								>Download Resume</a
+							> -->
+							<a
+								href="./resumeSon.pdf"
+								class="primary-btn outline external-link"
+							>
+								<span>Download Resume</span>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke="currentColor"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+									/>
+								</svg>
+							</a>
+							<button class="glow-on-hover" type="button">
+								<a
+									href="pages/contact.html"
+									style="color: cornsilk"
+								>
+									Contact Me
+								</a>
+							</button>
+						</div>
+					</div>
+				</div>
+				<!-- Skill Start -->
+				<div class="container-fluid py-5" id="skill">
+					<div class="containerr">
+						<div
+							class="position-relative d-flex align-items-center justify-content-center"
+						>
+							<h2
+								class="section-heading"
+								data-outline="My Skills"
+							>
+								My Skills
+							</h2>
+						</div>
+						<div class="row align-items-center">
+							<div class="col-md-6">
+								<div class="skill mb-4">
+									<div class="d-flex justify-content-between">
+										<h6 class="font-weight-bold">
+											HTML-CSS
+										</h6>
+										<h6 class="font-weight-bold">95%</h6>
+									</div>
+									<div class="progress">
+										<div
+											class="progress-bar bg-primary"
+											role="progressbar"
+											aria-valuenow="95"
+											aria-valuemin="0"
+											aria-valuemax="100"
+										></div>
+									</div>
+								</div>
+								<div class="skill mb-4">
+									<div class="d-flex justify-content-between">
+										<h6 class="font-weight-bold">
+											Git and Firebase
+										</h6>
+										<h6 class="font-weight-bold">85%</h6>
+									</div>
+									<div class="progress">
+										<div
+											class="progress-bar bg-warning"
+											role="progressbar"
+											aria-valuenow="85"
+											aria-valuemin="0"
+											aria-valuemax="100"
+										></div>
+									</div>
+								</div>
+								<div class="skill mb-4">
+									<div class="d-flex justify-content-between">
+										<h6 class="font-weight-bold">
+											PYTHON, Numpy, PyTorch
+										</h6>
+										<h6 class="font-weight-bold">75%</h6>
+									</div>
+									<div class="progress">
+										<div
+											class="progress-bar bg-danger"
+											role="progressbar"
+											aria-valuenow="75"
+											aria-valuemin="0"
+											aria-valuemax="100"
+										></div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="skill mb-4">
+									<div class="d-flex justify-content-between">
+										<h6 class="font-weight-bold">
+											Javascript, Node.js, and React.js
+										</h6>
+										<h6 class="font-weight-bold">80%</h6>
+									</div>
+									<div class="progress">
+										<div
+											class="progress-bar bg-danger"
+											role="progressbar"
+											aria-valuenow="80"
+											aria-valuemin="0"
+											aria-valuemax="100"
+										></div>
+									</div>
+								</div>
+								<div class="skill mb-4">
+									<div class="d-flex justify-content-between">
+										<h6 class="font-weight-bold">
+											SQL and MongoDB
+										</h6>
+										<h6 class="font-weight-bold">60%</h6>
+									</div>
+									<div class="progress">
+										<div
+											class="progress-bar bg-dark"
+											role="progressbar"
+											aria-valuenow="80"
+											aria-valuemin="0"
+											aria-valuemax="100"
+										></div>
+									</div>
+								</div>
+								<div class="skill mb-4">
+									<div class="d-flex justify-content-between">
+										<h6 class="font-weight-bold">
+											WIREFRAMES(WP, WIX, WEBFLOW)
+										</h6>
+										<h6 class="font-weight-bold">85%</h6>
+									</div>
+									<div class="progress">
+										<div
+											class="progress-bar bg-info"
+											role="progressbar"
+											aria-valuenow="85"
+											aria-valuemin="0"
+											aria-valuemax="100"
+										></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Skill End -->
+			</div>
+		</section>
+
+		<!-- services Section -->
+		<section id="services">
+			<div class="container">
+				<h2 class="section-heading" data-outline="Services">
+					Services
+				</h2>
+				<div class="all-items">
+					<div class="item">
+						<div class="icon">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="1"
+									d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+								/>
+							</svg>
+						</div>
+						<h3 class="item-heading">Full Stack Dev</h3>
+						<p class="item-desc">
+							I am experienced in Backend and Frontend Development
+							with application layers, presentation layers, and
+							databases. I have the required skills outlined in
+							the job description. I have advanced proficiencies
+							in HTML, CSS, JavaScript and SQL.
+						</p>
+					</div>
+					<div class="item">
+						<div class="icon">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="1"
+									d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"
+								/>
+							</svg>
+						</div>
+						<h3 class="item-heading">DAPP Development</h3>
+						<p class="item-desc">
+							I am interested in creating applications
+							decentralized networks, I have experience in React
+							and I am currently focused on learning more about
+							smart contracts. I also have a solid foundation in
+							MongoDB, Express, AngularJS, and Node.JS.
+						</p>
+					</div>
+					<div class="item">
+						<div class="icon">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="1"
+									d="M10 21h7a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v11m0 5l4.879-4.879m0 0a3 3 0 104.243-4.242 3 3 0 00-4.243 4.242z"
+								/>
+							</svg>
+						</div>
+						<h3 class="item-heading">SEO</h3>
+						<p class="item-desc">
+							With SEO, your business wants to increase its
+							visibility in search results on search engines. I
+							also provide SEO services to rank your website up.
+							Google algorithm partially uses keywords to
+							determine page rankings so we edit our strings
+							acordingly inorder to increase our ranking.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Testimonial Section -->
+		<section id="testimonial">
+			<div class="container">
+				<h1 class="section-heading" data-outline="Testimonial">
+					Testimonial
+				</h1>
+				<div class="all-items">
+					<div class="item">
+						<div class="img">
+							<img src="./image/enis.jpg" alt="" />
+						</div>
+						<h3 class="testimonial-heading">Mr. Ertan</h3>
+						<p class="testimonial-sub-heading">CEO, ODO</p>
+						<div class="icon">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"
+								/>
+							</svg>
+						</div>
+						<p class="testimonial-desc">
+							Ataol conveys quality work. He is an excellent
+							individual and an extraordinary cooperative person.
+							He is extremely straightforward and puts all her
+							energy to follow through on schedule.
+						</p>
+					</div>
+					<div class="item">
+						<div class="img">
+							<img src="./image/yasar.jpg" alt="" />
+						</div>
+						<h3 class="testimonial-heading">Yasar</h3>
+						<p class="testimonial-sub-heading">CEO, ODO Connect</p>
+						<div class="icon">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"
+								/>
+							</svg>
+						</div>
+						<p class="testimonial-desc">
+							I've worked with many individuals who are
+							tendentious and driven by things other than the work
+							they're doing. Ataol is genuinely energetic about
+							the web and the items he makes for it and that was
+							quite exiting.
+						</p>
+					</div>
+					<div class="item">
+						<div class="img">
+							<img src="./image/arda.jpg" alt="" />
+						</div>
+						<h3 class="testimonial-heading">Arda Kip</h3>
+						<p class="testimonial-sub-heading">Entrepreneur</p>
+						<div class="icon">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"
+								/>
+							</svg>
+						</div>
+						<p class="testimonial-desc">
+							Ataol is a wonderfully creative, collaborative, and
+							gifted developer who excels at creating inclusive
+							digital solutions.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- stats Section -->
+		<section id="stats">
+			<div class="container">
+				<h2 class="section-heading" data-outline="Stats">Stats</h2>
+				<div class="all-items">
+					<div class="item">
+						<h2 class="number">20+</h2>
+						<h3 class="stats-sub-heading">Projects done</h3>
+						<p>
+							I worked on more than 20+ projects. I know how to
+							make things fascinating and eye-catching I have a
+							good design experience. I always make functıonal
+							websites acordingly to requirments.
+						</p>
+					</div>
+					<div class="item">
+						<h2 class="number">10+</h2>
+						<h3 class="stats-sub-heading">Happy clients</h3>
+						<p>
+							I worked with more than 10+ clients since I started
+							freelancing. Client satisfaction is my main
+							priority. I generally attempt to complete the work
+							before the deadline.
+						</p>
+					</div>
+					<div class="item">
+						<h2 class="number">4+</h2>
+						<h3 class="stats-sub-heading">Years experience</h3>
+						<p>
+							Since my first year in University, I have been
+							tutoring and getting freelancing jobs. I have
+							developed many computer skills in adition to my
+							problem solving skills.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END Stats Section -->
+
+		<!-- projects -->
+		<section id="projects">
+			<div class="container">
+				<h2 class="section-heading" data-outline="Projects">
+					Projects
+				</h2>
+				<div class="all-items">
+					<div class="item">
+						<div class="left">
+							<div class="img">
+								<img src="./image/collective.png" alt="" />
+							</div>
+						</div>
+						<div class="right">
+							<h2 class="project-title" style="color: orange">
+								Collective Shop
+							</h2>
+							<h3 class="project-sub-title">
+								Turkish Online Shopping Website
+							</h3>
+							<p class="project-desc">
+								I made this application for a Turkish customer.
+								This website is truly Amazing. The website has
+								vendor function to act like a marketplace.
+								Frontend and Backend of the website is developed
+								by me. We are using othe e-commerce tools to
+								boost our sales.
+							</p>
+							<div class="buttons">
+								<a
+									href="https://www.collective-shop.com/"
+									target="_blank"
+									class="primary-btn outline external-link"
+								>
+									<span>Preview</span>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										fill="none"
+										viewBox="0 0 24 24"
+										stroke="currentColor"
+									>
+										<path
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											stroke-width="2"
+											d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+										/>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="left">
+							<div class="img">
+								<img src="./image/nar.png" alt="" />
+							</div>
+						</div>
+						<div class="right">
+							<h2 class="project-title" style="color: red">
+								NarBapp
+							</h2>
+							<h3 class="project-sub-title">
+								Blockchain app, NFT marketplace.
+							</h3>
+							<p class="project-desc">
+								NarBapp, is a blockchain application developed
+								to function as a NFT marketplace. Project
+								functions with smart-contracts, to manage NFT
+								property.
+							</p>
+							<div class="buttons">
+								<a
+									href="https://www.narbapp.com/"
+									target="_blank"
+									class="primary-btn outline external-link"
+								>
+									<span>Preview</span>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										fill="none"
+										viewBox="0 0 24 24"
+										stroke="currentColor"
+									>
+										<path
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											stroke-width="2"
+											d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+										/>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="left">
+							<div class="img">
+								<img src="./image/project-1.jpg" alt="" />
+							</div>
+						</div>
+						<div class="right">
+							<h2
+								style="color: rgb(174, 112, 36)"
+								class="project-title"
+							>
+								ODO
+							</h2>
+							<h3 class="project-sub-title">
+								Social platform for mentorship
+							</h3>
+							<p class="project-desc">
+								Piranz is one of the famous music composer in
+								UAE. The challenge was to keep the music
+								environment in the web. It was hard but in the
+								end we provided a good quality website that
+								satisfied the client.
+							</p>
+							<div class="buttons">
+								<a
+									href="https://www.odoconnect.com/"
+									target="_blank"
+									class="primary-btn outline external-link"
+								>
+									<span>Preview</span>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										fill="none"
+										viewBox="0 0 24 24"
+										stroke="currentColor"
+									>
+										<path
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											stroke-width="2"
+											d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+										/>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="left">
+							<div class="img">
+								<img src="./image/app.png" alt="" />
+							</div>
+						</div>
+						<div class="right">
+							<h2 class="project-title" style="color: green">
+								Serve24
+							</h2>
+							<h3 class="project-sub-title">
+								Tennis and sports Automation
+							</h3>
+							<p class="project-desc">
+								Serve24 Automation, an all-in-one tennis club
+								management software designed to deliver
+								unrivaled efficiency and experiences.
+							</p>
+							<div class="buttons">
+								<a
+									href="https://www.serve24.ca/"
+									target="_blank"
+									class="primary-btn outline external-link"
+								>
+									<span>Preview</span>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										fill="none"
+										viewBox="0 0 24 24"
+										stroke="currentColor"
+									>
+										<path
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											stroke-width="2"
+											d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+										/>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footerlab">
+			<div class="container-social">
+				<div class="social">
+					<a
+						class="link"
+						href="https://www.instagram.com/ataol.oray/"
+						target="_blank"
+						><ion-icon name="logo-instagram"></ion-icon></a
+					><a
+						class="link"
+						href="https://www.facebook.com/ataol.oray"
+						target="_blank"
+						><ion-icon name="logo-facebook"></ion-icon></a
+					><a
+						class="link"
+						href="https://www.linkedin.com/in/ataol-oray-2b37301b1/"
+						target="_blank"
+						><ion-icon name="logo-linkedin"></ion-icon></a
+					><a
+						class="link"
+						href="https://github.com/abothegod/"
+						target="_blank"
+						><ion-icon name="logo-github"></ion-icon
+					></a>
+				</div>
+			</div>
+			<ul class="list-inline">
+				<li class="list-inline-item">
+					<a href="#" style="color: #5924ed">Home</a>
+				</li>
+				<li class="list-inline-item">
+					<a href="./pages/contact.html" style="color: #5924ed"
+						>Contact</a
+					>
+				</li>
+				<li class="list-inline-item">
+					<a href="#projects" style="color: #5924ed">Projects</a>
+				</li>
+				<li class="list-inline-item">
+					<a href="/pages/donation.html" style="color: #5924ed"
+						>Donations</a
+					>
+				</li>
+			</ul>
+			<p class="copyright">Ataol Baran Oray © 2022</p>
+		</footer>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+		<script src="js/app.js"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+			crossorigin="anonymous"
+		></script>
+		<!-- <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i> -->
+
+		<!-- Back to Top -->
+		<a href="#" class="btn btn-outline-dark px-0 back-to-top"
+			><i class="fa fa-angle-double-up"></i
+		></a>
+
+		<!-- JavaScript Libraries -->
+		<!-- JavaScript Libraries -->
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+		<script src="lib/typed/typed.min.js"></script>
+		<script src="lib/easing/easing.min.js"></script>
+		<script src="lib/waypoints/waypoints.min.js"></script>
+		<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+		<script src="lib/isotope/isotope.pkgd.min.js"></script>
+		<script src="lib/lightbox/js/lightbox.min.js"></script>
+
+		<!-- Contact Javascript File -->
+		<script src="mail/jqBootstrapValidation.min.js"></script>
+		<script src="mail/contact.js"></script>
+
+		<!-- Template Javascript -->
+		<script src="js/main.js"></script>
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+		></script>
+	</body>
+</html>
